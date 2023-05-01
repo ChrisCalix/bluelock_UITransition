@@ -7,13 +7,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIFromAnimatedViewController {
 
+    private let animatorManager = AnimatorManager(duration: 0.5)
+    
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            self.imageViewReservedToAnimate = imageView
+        }
+    }
+    @IBOutlet weak var contentView: UIView! {
+        didSet {
+            self.contentViewReservedToAnimate = contentView
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.imageViewReservedToAnimate = imageView
     }
 
 
+    @IBAction func didPressedModeDetail(_ sender: Any) {
+        
+        
+        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "Detail2ViewController") else {
+            return
+        }
+        
+//        let nav = UINavigationController(rootViewController: detailVC)
+        navigationController?.delegate = animatorManager
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
-

@@ -1,24 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wdq-Bp-N9l">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="transitions_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eu-Ru-otL">
+                                <rect key="frame" x="16" y="119" width="361" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSz-Ef-1gk">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoichi" translatesAutoresizingMaskIntoConstraints="NO" id="fHy-l2-FDt">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fHy-l2-FDt" firstAttribute="leading" secondItem="gSz-Ef-1gk" secondAttribute="leading" id="9qz-qm-Q7E"/>
+                                            <constraint firstAttribute="width" secondItem="gSz-Ef-1gk" secondAttribute="height" multiplier="1:1" id="NZj-3T-ypw"/>
+                                            <constraint firstAttribute="bottom" secondItem="fHy-l2-FDt" secondAttribute="bottom" id="i0A-sY-bCV"/>
+                                            <constraint firstItem="fHy-l2-FDt" firstAttribute="top" secondItem="gSz-Ef-1gk" secondAttribute="top" id="jcG-v5-PTs"/>
+                                            <constraint firstAttribute="trailing" secondItem="fHy-l2-FDt" secondAttribute="trailing" id="xpW-D2-7UU"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="TopLeft" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IHG-7A-o7a">
+                                        <rect key="frame" x="216" y="0.0" width="145" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoichi Isagi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U4-7Q-hzY">
+                                                <rect key="frame" x="13.333333333333336" y="0.0" width="118.33333333333331" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="bl4-V3-Tay"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnT-xb-Dm2">
+                                                <rect key="frame" x="0.0" y="48" width="145" height="152"/>
+                                                <string key="text">Isagi es un estudiante de secundaria de segundo curso, que anteriormente jugó como delantero para el equipo de fútbol del Instituto Ichinan. Cuando llegó a las instalaciones de Blue Lock, se convirtió en un miembro del Equipo Z para la Primera Selección. Su principal objetivo es convertirse en el mejor delantero del mundo.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="CNF-ec-Egl"/>
+                                            <constraint firstAttribute="height" constant="200" id="p4s-C8-QLt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gSz-Ef-1gk" firstAttribute="top" secondItem="5eu-Ru-otL" secondAttribute="top" id="4PW-q4-DBA"/>
+                                    <constraint firstItem="IHG-7A-o7a" firstAttribute="top" secondItem="gSz-Ef-1gk" secondAttribute="top" id="GyA-65-gs7"/>
+                                    <constraint firstAttribute="bottom" secondItem="gSz-Ef-1gk" secondAttribute="bottom" id="NM6-QR-eaW"/>
+                                    <constraint firstAttribute="height" constant="200" id="Pw0-bF-Is7"/>
+                                    <constraint firstItem="IHG-7A-o7a" firstAttribute="bottom" secondItem="gSz-Ef-1gk" secondAttribute="bottom" id="W1j-SD-Skg"/>
+                                    <constraint firstItem="IHG-7A-o7a" firstAttribute="leading" secondItem="gSz-Ef-1gk" secondAttribute="trailing" constant="16" id="oLm-L2-Nyy"/>
+                                    <constraint firstAttribute="trailing" secondItem="IHG-7A-o7a" secondAttribute="trailing" id="qw9-7j-RQo"/>
+                                    <constraint firstItem="gSz-Ef-1gk" firstAttribute="leading" secondItem="5eu-Ru-otL" secondAttribute="leading" id="uD0-Tx-Rm7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQ3-xM-WOg">
+                                <rect key="frame" x="16" y="335" width="361" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WeI-Sc-SJ2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="More Detail">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="AmericanTypewriter-Bold"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didPressedModeDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sky-hA-m3e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5eu-Ru-otL" secondAttribute="trailing" constant="16" id="AC5-09-9Au"/>
+                            <constraint firstItem="oQ3-xM-WOg" firstAttribute="top" secondItem="5eu-Ru-otL" secondAttribute="bottom" constant="16" id="Rh6-1W-Olh"/>
+                            <constraint firstItem="oQ3-xM-WOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SQn-Nu-Srx"/>
+                            <constraint firstItem="5eu-Ru-otL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZA6-gA-avK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oQ3-xM-WOg" secondAttribute="trailing" constant="16" id="lcW-OT-sY0"/>
+                            <constraint firstItem="5eu-Ru-otL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="xyn-pP-U6k"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hFa-hl-ml9"/>
+                    <connections>
+                        <outlet property="contentView" destination="gSz-Ef-1gk" id="sRh-wy-f7H"/>
+                        <outlet property="imageView" destination="fHy-l2-FDt" id="ai3-aw-jne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="779.38931297709917" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail2 View Controller-->
+        <scene sceneID="2eO-Qe-Q5V">
+            <objects>
+                <viewController storyboardIdentifier="Detail2ViewController" id="CMD-9V-B2q" customClass="Detail2ViewController" customModule="transitions_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lh4-dA-Ya3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJ1-cM-98w">
+                                <rect key="frame" x="0.0" y="126" width="393" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoichi Isagi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqx-Sw-PT4">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZMX-Q6-wpN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoichi" translatesAutoresizingMaskIntoConstraints="NO" id="KKa-rZ-xOC">
+                                        <rect key="frame" x="0.0" y="56" width="393" height="344"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="0Li-K8-5R5"/>
+                                    <constraint firstAttribute="width" constant="393" id="6HZ-lS-bIg"/>
+                                    <constraint firstItem="KKa-rZ-xOC" firstAttribute="top" secondItem="Mqx-Sw-PT4" secondAttribute="bottom" constant="16" id="6Uz-KW-fwK"/>
+                                    <constraint firstItem="Mqx-Sw-PT4" firstAttribute="top" secondItem="mJ1-cM-98w" secondAttribute="top" id="8lH-zi-ukM"/>
+                                    <constraint firstItem="KKa-rZ-xOC" firstAttribute="leading" secondItem="mJ1-cM-98w" secondAttribute="leading" id="Z6f-Y0-xyo"/>
+                                    <constraint firstAttribute="bottom" secondItem="KKa-rZ-xOC" secondAttribute="bottom" id="a3v-V6-dey"/>
+                                    <constraint firstAttribute="trailing" secondItem="KKa-rZ-xOC" secondAttribute="trailing" id="apI-wX-juV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mqx-Sw-PT4" secondAttribute="trailing" id="iOQ-6B-NAy"/>
+                                    <constraint firstItem="Mqx-Sw-PT4" firstAttribute="leading" secondItem="mJ1-cM-98w" secondAttribute="leading" id="waC-pG-b8q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WZv-wZ-TYL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mJ1-cM-98w" firstAttribute="centerX" secondItem="lh4-dA-Ya3" secondAttribute="centerX" id="ktc-NC-2rr"/>
+                            <constraint firstItem="mJ1-cM-98w" firstAttribute="top" secondItem="lh4-dA-Ya3" secondAttribute="top" constant="126" id="w7w-lX-g6j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="mJ1-cM-98w" id="wgr-GV-NBq"/>
+                        <outlet property="imageView" destination="KKa-rZ-xOC" id="GMA-gd-Sr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irG-we-tkl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490.8396946564885" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tuN-Yn-qi4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wdq-Bp-N9l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EoE-SR-Ldd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p6z-qy-OTb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8a-wI-thj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-147.32824427480915" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="yoichi" width="1280" height="1280"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

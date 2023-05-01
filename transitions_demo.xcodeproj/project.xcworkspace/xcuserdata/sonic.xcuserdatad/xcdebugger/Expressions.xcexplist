@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AnimatorManager.presentViewConrtoller&lt;&#x3c4;_0_0, &#x3c4;_0_1&gt;(_:from:with:):AnimatorManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " window.safeAreaLayoutGuide.value(forKey: &quot;topAnchor&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailViewcontroller.viewDidLoad():DetailViewcontroller.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.imageReservedToAnimate">
+            </PersistentString>
+            <PersistentString
+               value = "image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

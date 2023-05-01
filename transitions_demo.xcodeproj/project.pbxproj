@@ -13,6 +13,10 @@
 		C310788C29FF1104003B0340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C310788A29FF1104003B0340 /* Main.storyboard */; };
 		C310788E29FF1104003B0340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C310788D29FF1104003B0340 /* Assets.xcassets */; };
 		C310789129FF1104003B0340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C310788F29FF1104003B0340 /* LaunchScreen.storyboard */; };
+		C310789929FF112C003B0340 /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310789829FF112C003B0340 /* DetailViewcontroller.swift */; };
+		C310789B29FF1580003B0340 /* AnimatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310789A29FF1580003B0340 /* AnimatorManager.swift */; };
+		C310789F29FF189A003B0340 /* UIFromAnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310789E29FF189A003B0340 /* UIFromAnimatedViewController.swift */; };
+		C31078A129FF268D003B0340 /* Detail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31078A029FF268D003B0340 /* Detail2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C310788D29FF1104003B0340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C310789029FF1104003B0340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C310789229FF1104003B0340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C310789829FF112C003B0340 /* DetailViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
+		C310789A29FF1580003B0340 /* AnimatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorManager.swift; sourceTree = "<group>"; };
+		C310789E29FF189A003B0340 /* UIFromAnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFromAnimatedViewController.swift; sourceTree = "<group>"; };
+		C31078A029FF268D003B0340 /* Detail2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				C310788429FF1104003B0340 /* AppDelegate.swift */,
 				C310788629FF1104003B0340 /* SceneDelegate.swift */,
+				C310789829FF112C003B0340 /* DetailViewcontroller.swift */,
 				C310788829FF1104003B0340 /* ViewController.swift */,
 				C310788A29FF1104003B0340 /* Main.storyboard */,
 				C310788D29FF1104003B0340 /* Assets.xcassets */,
 				C310788F29FF1104003B0340 /* LaunchScreen.storyboard */,
 				C310789229FF1104003B0340 /* Info.plist */,
+				C310789A29FF1580003B0340 /* AnimatorManager.swift */,
+				C310789E29FF189A003B0340 /* UIFromAnimatedViewController.swift */,
+				C31078A029FF268D003B0340 /* Detail2ViewController.swift */,
 			);
 			path = transitions_demo;
 			sourceTree = "<group>";
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C310788929FF1104003B0340 /* ViewController.swift in Sources */,
+				C310789B29FF1580003B0340 /* AnimatorManager.swift in Sources */,
+				C31078A129FF268D003B0340 /* Detail2ViewController.swift in Sources */,
 				C310788529FF1104003B0340 /* AppDelegate.swift in Sources */,
+				C310789F29FF189A003B0340 /* UIFromAnimatedViewController.swift in Sources */,
 				C310788729FF1104003B0340 /* SceneDelegate.swift in Sources */,
+				C310789929FF112C003B0340 /* DetailViewcontroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
